@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="paul.lege" />
+  <title>-1sh</title>
+<link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/github.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/highlight.min.js"></script>
+<script>hljs.highlightAll();</script>
+  <link rel="stylesheet" href="style.css" />
+<style type="text/css">
+  :root {
+/*
+  --color: #2096ba;
+  --color-secondary: #2096ba;
+  --color-accent: #f7f8fa;
+  --color-text: #222426;
+  --color-shadow: #c5d2db;
+  --width-content: 720px;
+  }
+*/
+  
+  code, samp {
+    font-size: 1.2em;
+  }
+
+  nav {
+    justify-content: space-evenly;
+  }
+
+  
+  a:hover {
+    filter: none;
+    color: #df6e21;
+  }
+</style>
+</head>
+<body>
+<header id="title-block-header">
+  <nav id="TOC">
+      <a href="/jour1"><img alt="Logo" src="https://avatars.githubusercontent.com/u/96961500?s=200&amp;v=4" height="70"></a>
+            <ul>
+          <li><a href="#">Navigation</a>
+            <ul>
+            <li><a href="#introduction">Introduction</a></li>
+            <li><a href="#sh">-1SH</a>
+            <ul>
+            <li><a href="#standard-commands">Standard commands</a></li>
+            </ul></li>
+            <li><a href="#working-in-group">Working in group</a></li>
+            <li><a href="#tips">Tips</a></li>
+            </ul>
+          </li>
+      </ul>
+        </nav>
+<h1 class="title">-1sh</h1>
+<p class="author">paul.lege</p>
+</header>
+<main>
+<hr>
+<article>
+<h1 id="introduction">Introduction</h1>
+<p>In this mini-project you will have to implement a small command executer, a few standard commands and an interactive prompt to use these commands.</p>
+<h1 id="sh">-1SH</h1>
+<p>You will write a program named -1SH, wich will read a line from a standard input (stdin), split it on the spaces, then execute the corresponding command.</p>
+<h2 id="standard-commands">Standard commands</h2>
+<p>You will have to implement some commands for your -1SH. If an error occurs while a command is executed, you must display the relevant error message (err.h/errno.h) on the stderr. For every command you must to refer to its man page.</p>
+<h3 id="cat">Cat</h3>
+<p>Cat print on the standard output the content of each file passed as an argument, without any separator. You must handle -e parameter. If there is an error, stop the processing of the arguments.</p>
+<h3 id="echo">Echo</h3>
+<p>Echo print on the standard output given argumen as is, followed by a newline character</p>
+<h3 id="head">Head</h3>
+<p>head prints on the standard output the first 10 lines of the given files. In the case where is more than one file to read, head will display the name of the read file before its content. If there is an error, stop the processing of the arguments.</p>
+<h3 id="quit">Quit</h3>
+<p>The quit command will stop the execution of you -1SH correctly. Don’t forget free everything. The return code has to be the same than the one of the last executed command. If no one was executed return 0.</p>
+<h3 id="section">&amp;&amp;</h3>
+<p>And operator must be handle. You must execute the left command before the right. If the left command fail, you don’t have to run the right.</p>
+<h3 id="section-1">||</h3>
+<p>Or operator must be handle. As the and operator you must execute the left command before the right. If the left succed, you don’t have to run the right.</p>
+<h1 id="working-in-group">Working in group</h1>
+<p>For this project you must work in group of 2-4 persons, you should create a git repos on the cri gitlab.</p>
+<h1 id="tips">Tips</h1>
+<p>For this project you check the shunting yard algorithm and the reverse polish notation. They will help you to handle &amp;&amp; and || operator.</p>
+<hr>
+</article>
+</main>
+</body>
+</html>
