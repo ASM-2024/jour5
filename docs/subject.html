@@ -22,7 +22,7 @@
   --width-content: 720px;
   }
 */
-  
+
   code, samp {
     font-size: 1.2em;
   }
@@ -31,7 +31,7 @@
     justify-content: space-evenly;
   }
 
-  
+
   a:hover {
     filter: none;
     color: #df6e21;
@@ -67,23 +67,23 @@
 <h1 id="sh">-1SH</h1>
 <p>You will write a program named -1SH, wich will read a line from a standard input (stdin), split it on the spaces, then execute the corresponding command.</p>
 <h2 id="standard-commands">Standard commands</h2>
-<p>You will have to implement some commands for your -1SH. If an error occurs while a command is executed, you must display the relevant error message (err.h/errno.h) on the stderr. For every command you must to refer to its man page.</p>
+<p>You will have to implement some commands for your -1SH. If an error occurs while a command is executed, you must display the relevant error message (err.h/errno.h) on the stderr. For every command you must refer to its man page.</p>
 <h3 id="cat">Cat</h3>
-<p>Cat print on the standard output the content of each file passed as an argument, without any separator. You must handle -e parameter. If there is an error, stop the processing of the arguments.</p>
+<p>Print the content of each file passed as argument on the standard output, without any separator. You must handle the -e parameter. If there is an error, stop the argument processing.</p>
 <h3 id="echo">Echo</h3>
-<p>Echo print on the standard output given argumen as is, followed by a newline character</p>
+<p>Print given argumen as is on the standard output, followed by a newline character</p>
 <h3 id="head">Head</h3>
-<p>head prints on the standard output the first 10 lines of the given files. In the case where is more than one file to read, head will display the name of the read file before its content. If there is an error, stop the processing of the arguments.</p>
+<p>Print the first 10 lines of the given files on the standard output. In the case where there is more than one file to read, head will display the name of each read file before its content. If there is an error, stop the argument processing.</p>
 <h3 id="quit">Quit</h3>
-<p>The quit command will stop the execution of you -1SH correctly. Don’t forget free everything. The return code has to be the same than the one of the last executed command. If no one was executed return 0.</p>
+<p>The quit command will stop the execution of your -1SH properly. Don’t forget to free everything. The return code has to be the same as the one of the last executed command. Return 0 if nothing was executed .</p>
 <h3 id="section">&amp;&amp;</h3>
-<p>And operator must be handle. You must execute the left command before the right. If the left command fail, you don’t have to run the right.</p>
+<p>The AND operator must be handled. You must execute the left command before the right one. If the left command fails, you don’t have to run the right one.</p>
 <h3 id="section-1">||</h3>
-<p>Or operator must be handle. As the and operator you must execute the left command before the right. If the left succed, you don’t have to run the right.</p>
+<p>The OR operator must be handled. Like with the AND operator, you must execute the left command before the right one. If the left command succeds, you don’t have to run the right one.</p>
 <h1 id="working-in-group">Working in group</h1>
-<p>For this project you must work in group of 2-4 persons, you should create a git repos on the cri gitlab.</p>
+<p>For this project you must work in groups of 2-4 people; you should create a git repos on the CRI's gitlab.</p>
 <h1 id="tips">Tips</h1>
-<p>For this project you check the shunting yard algorithm and the reverse polish notation. They will help you to handle &amp;&amp; and || operator.</p>
+<p>For this project you should check out the shunting yard algorithm as well as reverse polish notation. They will help you in handling the &amp;&amp; and || operators.</p>
 <hr>
 </article>
 </main>
