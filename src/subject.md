@@ -41,6 +41,10 @@ And operator must be handle. You must execute the left command before the right.
 
 Or operator must be handle. As the and operator you must execute the left command before the right. If the left succed, you don't have to run the right.
 
+### ()
+
+The priority of parentheses operators must be handled
+
 # Working in group
 For this project you must work in group of 2-4 persons, you should create a git repos on the cri gitlab.
 
